@@ -29,6 +29,35 @@
         </label>
         <input type="text" class="header__search-input">
       </div>
+
+      <div class="header__icons">
+        <img class="header__logout" src="./img/door.svg" />
+        <input type="checkbox" class="header__cart-toggle" id="toggle" />
+
+        <div class="header__cart">
+          <label for="toggle">
+            <img class="header__bag" src="./img/bag.svg" />
+          </label>
+
+          <div class="header__cart-container">
+            <ul class="header__cart-products">
+              <li class="header__cart-product">
+                Produto <span>R$ 59,90</span>
+              </li>
+              <li class="header__cart-product">
+                Produto <span>R$ 129,90</span>
+              </li>
+            </ul>
+
+            <div class="header__cart-total">
+              total
+              <span class="header__cart-total--green">R$ 189,80</span>
+            </div>
+
+            <a href="#" class="header__cart-checkout">FINALIZAR COMPRA</a>
+          </div>
+        </div>
+      </div>
     </div>
   </header>
 </body>
