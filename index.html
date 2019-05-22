@@ -12,7 +12,12 @@
 
 <body>
   <header class="header">
+    <input type="checkbox" id="hamburger-toggle" class="header__hamburger-toggle">
+
     <div class="header__container">
+      <label class="header__hamburger" for="hamburger-toggle"></label>
+      <img src="./img/Lorem-Ipsum.png" class="header__img-mobile" />
+
       <div class="header__left">
         <p class="header__welcome">Bem vindo! <b class="header__welcome--bold">Já é cadastrado?</b></p>
       </div>
@@ -62,7 +67,9 @@
 
     <nav class="header__nav">
       <ul class="header__nav-container">
-        <li class="header__nav-item">ROSTO</li>
+        <li class="header__nav-item">
+          <span class="header__nav-item-label">ROSTO</span>
+        </li>
         <li class="header__nav-item">
           <span class="header__nav-item-label">CABELO</span>
 
@@ -102,12 +109,22 @@
 
           </div>
         </li>
-        <li class="header__nav-item">CORPO E BANHO</li>
-        <li class="header__nav-item header__nav-item--right">BARBA</li>
-        <li class="header__nav-item">ACESSÓRIOS</li>
-        <li class="header__nav-item">KITS E PRESENTES</li>
+        <li class="header__nav-item">
+          <span class="header__nav-item-label">CORPO E BANHO</span>
+        </li>
+        <li class="header__nav-item header__nav-item--right">
+          <span class="header__nav-item-label">BARBA</span>
+        </li>
+        <li class="header__nav-item">
+          <span class="header__nav-item-label">ACESSÓRIOS</span>
+        </li>
+        <li class="header__nav-item">
+          <span class="header__nav-item-label">KITS E PRESENTES</span>
+        </li>
       </ul>
     </nav>
+
+    <img class="header__logo" src="img/logo.png" />
   </header>
 </body>
 

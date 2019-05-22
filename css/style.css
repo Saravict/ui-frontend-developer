@@ -6,6 +6,10 @@
   background-color: #1f1f1f;
 }
 
+.header__logo {
+  position: absolute;
+}
+
 .header__container {
   width: 90%;
   display: grid;
@@ -314,4 +318,131 @@
   height: 100%;
   object-fit: cover;
   position: absolute;
+}
+
+.header__hamburger-toggle {
+  display: none;
+}
+
+.header__img-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 380px) {
+  .header__nav {
+    height: 0;
+    font-size: 24px;
+    overflow: hidden;
+    font-weight: bold;
+    transition: height 377ms;
+    background-color: #141414;
+  }
+
+  .header__nav-item {
+    margin-bottom: 22px;
+  }
+  
+  .header__nav-item:hover {
+    color: white;
+  }
+
+  .header__nav-item:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .header__dropdown {
+    display: none;
+  }
+
+  .header__nav-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__nav-item--right {
+    margin-left: 0;
+  }
+  
+  .header__left {
+    display: none;
+  }
+
+  .header__right {
+    display: none;
+  }
+
+
+  .header__icons {
+    margin: 0;
+  }
+
+  .header__logo {
+    display: none;
+  }
+
+  .header__search {
+    margin: 5px 10px 0 auto;
+  }
+  
+  .header__search-icon {
+    left: 0;
+    position: relative;
+  }
+
+  .header__search-input {
+    display: none;
+  }
+
+  .header__container {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+  }
+
+  .header__left, .header__right {
+    padding: 0;
+  }
+
+  .header__logout {
+    margin-right: -1px;
+    transition: filter 148ms ease-in-out;
+  }
+
+  .header__hamburger {
+    width: 39px;
+    height: 4px;
+    display: block;
+    position: relative;
+    background-color: white; 
+  }
+
+  .header__hamburger:before,
+  .header__hamburger:after {
+    content: '';
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: absolute;
+    background-color: white; 
+  }
+
+  .header__hamburger:before {
+    top: -7px;
+  }
+
+  .header__hamburger:after {
+    top: 7px;
+  }
+
+  .header__hamburger-toggle:checked ~ .header__nav {
+    height: 100vh;
+  }
+
+  .header__img-mobile {
+    height: 66px;
+    display: block;
+    margin-top: 20px;
+    margin-left: 16px;
+  }
 }
